@@ -1,0 +1,36 @@
+/*DIGITS*/
+.digits-wrapper {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 2px $white;
+
+    * {
+        color: $secColor;
+    }
+    .counting {
+        position: relative;
+        text-align: center;
+        font-size: rem(64px);
+        font-weight: 100;
+        margin-bottom: 0.7rem;
+
+        &:after {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    height: 2px;
+                    background-color: $altColor;
+                    width: rem(32);
+                }
+    }
+
+    .digit-description{
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
